@@ -10,7 +10,7 @@ import org.json.simple.JSONValue;
 
 public class App {
     public static void main(String[] args) {
-        Object json = JSONValue.parse("{\"hello\":\"world\"}");
+        Object json = JSONValue.parse("{\"hello\":\"Pure Magic!\"}");
         JSONObject data = (JSONObject) json;
         System.out.println(data.get("hello"));
     }
