@@ -5,10 +5,13 @@
 
 package com.mycompany.app;
 
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello Remote World!" );
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
+public class App {
+    public static void main(String[] args) {
+        Object json = JSONValue.parse("{\"hello\":\"world\"}");
+        JSONObject data = (JSONObject) json;
+        System.out.println(data.get("hello"));
     }
 }
